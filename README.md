@@ -9,8 +9,8 @@ Um rice minimalista e funcional para ambientes GNOME, inspirado no visual do Exo
 - 🎯 Compatível com **GNOME**
 - 🧩 **Barra personalizada com Polybar**
 - 🎨 **9 temas diferentes**, com mudanças dinâmicas nas cores da barra
-- 🌐 **Menu de internet** (status e conexões rápidas)
-- ⚡ **Powermenu** (desligar, reiniciar, suspender)
+- 🌐 **Menu de internet** 
+- ⚡ **Powermenu** 
 - 📦 **Menu de aplicativos** com Rofi
 
 ---
