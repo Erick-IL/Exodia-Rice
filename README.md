@@ -55,7 +55,81 @@ cd Exodia-rice
 
 ## 📸 Screenshots
 
-> *(Adicione aqui imagens mostrando a barra, os menus e os temas)*
+<details>
+  
+  <summary> Purple Eva 01 </summary>
+
+  ### Desktop
+  ![Desktop](preview/purple_eva01/desktop.png)
+  ---
+  ### Menu
+  ![Desktop](preview/purple_eva01/menu.png)
+  ---
+  ### PowerMenu
+  ![Desktop](preview/purple_eva01/powermenu.png)
+
+
+</details> 
+
+<details>
+  
+  <summary> Red Cross Eva </summary>
+
+  ### Desktop
+  ![Desktop](preview/redcross-eva/desktop.png)
+  ---
+  ### Menu
+  ![Desktop](preview/redcross-eva/menu.png)
+  ---
+  ### PowerMenu
+  ![Desktop](preview/redcross-eva/powermenu.png)
+</details> 
+
+
+<details>
+  
+  <summary> Musashi </summary>
+
+  ### Desktop
+  ![Desktop](preview/musashi/desktop.png)
+  ---
+  ### Menu
+  ![Desktop](preview/musashi/menu.png)
+  ---
+  ### PowerMenu
+  ![Desktop](preview/musashi/powermenu.png)
+</details> 
+
+
+
+<details>
+  
+  <summary> Guts </summary>
+
+  ### Desktop
+  ![Desktop](preview/guts/desktop.png)
+  ---
+  ### Menu
+  ![Desktop](preview/guts/menu.png)
+  ---
+  ### PowerMenu
+  ![Desktop](preview/guts/powermenu.png)
+</details> 
+
+
+<details>
+  
+  <summary> Black Magic </summary>
+
+  ### Desktop
+  ![Desktop](preview/black_magic/desktop.png)
+  ---
+  ### Menu
+  ![Desktop](preview/black_magic/menu.png)
+  ---
+  ### PowerMenu
+  ![Desktop](preview/black_magic/powermenu.png)
+</details> 
 
 ---
 
