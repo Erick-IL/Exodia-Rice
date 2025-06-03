@@ -14,9 +14,9 @@ sudo cp -r polybar ~/.config/
 sudo mkdir -p ~/.config/autostart
 sudo cp polybar.desktop ~/.config/autostart/
 
-sudo chmod a+r ~/.config/polybar/menu.rasi
-sudo chmod a+r ~/.config/polybar/scripts/powermenu.rasi
-sudo chmod a+r ~/.config/polybar/scripts/choose_theme.rasi
+sudo chmod a+r ~/.config/polybar/scripts/theme/menu.rasi
+sudo chmod a+r ~/.config/polybar/scripts/theme/powermenu.rasi
+sudo chmod a+r ~/.config/polybar/scripts/theme/choose_theme.rasi
 
 NOME1="Abrir GNOME Terminal"
 COMANDO1="gnome-terminal"
