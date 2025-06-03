@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt remove --purge -y polybar rofi
+sudo apt remove --purge -y polybar rofi dbus-x11
 
 sudo  rm -rf ~/.config/polybar
 
