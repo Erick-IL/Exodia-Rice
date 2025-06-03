@@ -16,6 +16,8 @@ else
     echo "Imagem padrão não encontrada: $DEFAULT_WALLPAPER"
 fi
 
+./remove_bind.sh
+
 sudo apt remove --purge -y polybar rofi dbus-x11
 
 echo "Rice desinstalado com sucesso!"

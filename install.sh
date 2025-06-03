@@ -14,16 +14,13 @@ sudo cp -r polybar ~/.config/
 sudo mkdir -p ~/.config/autostart
 sudo cp polybar.desktop ~/.config/autostart/
 
-sudo chmod +x ~/.config/polybar/launch.sh
-sudo chmod +x ~/.config/polybar/scripts/battery.sh        
-sudo chmod +x ~/.config/polybar/scripts/menu.sh
-sudo chmod +x ~/.config/polybar/scripts/player.sh
-sudo chmod +x ~/.config/polybar/scripts/powermenu.sh
-sudo chmod +x ~/.config/polybar/scripts/rofi-wifi-menu.sh
+sudo chmod a+r ~/.config/polybar/menu.rasi
+sudo chmod a+r ~/.config/polybar/scripts/powermenu.rasi
+sudo chmod a+r ~/.config/polybar/scripts/choose_theme.rasi
 
 NOME1="Abrir GNOME Terminal"
 COMANDO1="gnome-terminal"
-ATALHO1="<Control>Return"
+ATALHO1="<Super>Return"
 
 NOME2="Abrir menu"
 COMANDO2="$HOME/.config/polybar/scripts/menu.sh"
