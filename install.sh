@@ -2,6 +2,12 @@
 
 sudo apt install polybar rofi -y
 
+if [ -f "$HOME/.config/polybar" ]; then
+    rm -f "$HOME/.config/polybar"
+fi
+
+
+
 mkdir -p ~/.config
 cp -r polybar ~/.config/
 
