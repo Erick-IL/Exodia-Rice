@@ -8,7 +8,7 @@ cp -r polybar ~/.config/
 mkdir -p ~/.config/autostart
 cp polybar.desktop ~/.config/autostart/
 
-sudo chmod +x ./config/polybar/launch.sh
+sudo chmod +x ~/.config/polybar/launch.sh
 
 NOME1="Abrir GNOME Terminal"
 COMANDO1="gnome-terminal"
