@@ -1,10 +1,11 @@
 #!/bin/bash
-#!/bin/bash
 
-sudo apt install polybar rofi
+sudo apt install polybar rofi -y
 
-cp polybar ~/.config/
+mkdir -p ~/.config
+cp -r polybar ~/.config/
 
+mkdir -p ~/.config/autostart
 cp polybar.desktop ~/.config/autostart/
 
 
@@ -13,12 +14,18 @@ COMANDO1="gnome-terminal"
 ATALHO1="<Control>Return"
 
 NOME2="Abrir menu"
-COMANDO2="~/.config/polybar/scipts/menu.sh"
+COMANDO2="$HOME/.config/polybar/scripts/menu.sh"
 ATALHO2="<Super>q"
 
 EXISTENTES=$(gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings)
 
-IFS=',' read -ra BINDINGS <<< "$(echo $EXISTENTES | sed -e "s/[\[\]']//g")"
+if [[ $EXISTENTES == "[]" ]]; then
+    BINDINGS=()
+else
+    BINDINGS=()
+    EXISTENTES_CLEAN=$(echo $EXISTENTES | sed -e "s/^\[//" -e "s/\]$//" -e "s/'//g" -e "s/ //g")
+    IFS=',' read -ra BINDINGS <<< "$EXISTENTES_CLEAN"
+fi
 
 IDX1=${#BINDINGS[@]}
 IDX2=$((IDX1 + 1))
@@ -26,8 +33,11 @@ IDX2=$((IDX1 + 1))
 PATH1="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom$IDX1/"
 PATH2="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom$IDX2/"
 
-NOVOS_BINDINGS=("${BINDINGS[@]}" "'$PATH1'" "'$PATH2'")
-NOVOS_BINDINGS_STRING="[${NOVOS_BINDINGS[*]}]"
+NOVOS_BINDINGS=("${BINDINGS[@]}" "$PATH1" "$PATH2")
+
+
+NOVOS_BINDINGS_STRING=$(printf "'%s'," "${NOVOS_BINDINGS[@]}")
+NOVOS_BINDINGS_STRING="[${NOVOS_BINDINGS_STRING%,}]" 
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "$NOVOS_BINDINGS_STRING"
 
@@ -39,4 +49,4 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PA
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH2 command "$COMANDO2"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH2 binding "$ATALHO2"
 
-echo "Rice Instalado com sucesso!"
+echo "Rice instalado com sucesso!"
