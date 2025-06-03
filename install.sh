@@ -18,6 +18,8 @@ sudo chmod a+r ~/.config/polybar/scripts/theme/menu.rasi
 sudo chmod a+r ~/.config/polybar/scripts/theme/powermenu.rasi
 sudo chmod a+r ~/.config/polybar/scripts/theme/choose_theme.rasi
 
+sudo chown -R $USER:$USER /home/$USER/.config/polybar
+
 NOME1="Abrir GNOME Terminal"
 COMANDO1="gnome-terminal"
 ATALHO1="<Super>Return"
