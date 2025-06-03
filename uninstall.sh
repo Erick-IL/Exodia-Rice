@@ -6,4 +6,6 @@ rm -rf ~/.config/polybar
 
 rm -f ~/.config/autostart/polybar.desktop
 
+killall grep polybar
+
 echo "Rice desinstalado com sucesso!"
