@@ -15,7 +15,11 @@ mkdir -p ~/.config/autostart
 cp polybar.desktop ~/.config/autostart/
 
 sudo chmod +x ~/.config/polybar/launch.sh
-sudo chmod +x ~/.config/polybar/scripts battery.sh  menu.sh  player.sh  powermenu.sh  rofi-wifi-menu.sh
+sudo chmod +x ~/.config/polybar/scripts/battery.sh        
+sudo chmod +x ~/.config/polybar/scripts/menu.sh
+sudo chmod +x ~/.config/polybar/scripts/player.sh
+sudo chmod +x ~/.config/polybar/scripts/powermenu.sh
+sudo chmod +x ~/.config/polybar/scripts/rofi-wifi-menu.sh
 
 NOME1="Abrir GNOME Terminal"
 COMANDO1="gnome-terminal"
