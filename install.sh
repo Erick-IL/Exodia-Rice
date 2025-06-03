@@ -8,11 +8,11 @@ fi
 
 
 
-mkdir -p ~/.config
-cp -r polybar ~/.config/
+sudo mkdir -p ~/.config
+sudo cp -r polybar ~/.config/
 
-mkdir -p ~/.config/autostart
-cp polybar.desktop ~/.config/autostart/
+sudo mkdir -p ~/.config/autostart
+sudo cp polybar.desktop ~/.config/autostart/
 
 sudo chmod +x ~/.config/polybar/launch.sh
 sudo chmod +x ~/.config/polybar/scripts/battery.sh        
