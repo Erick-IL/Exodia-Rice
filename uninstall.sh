@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo apt remove --purge -y polybar rofi dbus-x11
-
 sudo  rm -rf ~/.config/polybar
 
 sudo rm -f ~/.config/autostart/polybar.desktop
@@ -18,5 +16,6 @@ else
     echo "Imagem padrão não encontrada: $DEFAULT_WALLPAPER"
 fi
 
+sudo apt remove --purge -y polybar rofi dbus-x11
 
 echo "Rice desinstalado com sucesso!"
