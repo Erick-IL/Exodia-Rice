@@ -34,6 +34,8 @@ git clone https://github.com/Erick-IL/Exodia-rice.git
 cd Exodia-rice
 
 ./install.sh
+# para 100% do funcionamento recomendado reiniciar
+reboot
 
 ```
 
