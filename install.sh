@@ -60,6 +60,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PA
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH2 command "$COMANDO2"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH2 binding "$ATALHO2"
 
+gsettings set org.gnome.desktop.background picture-uri "file:///home/$USER/.config/polybar/wallpapers/purple-eva01.jpg"
+gsettings set org.gnome.desktop.background picture-uri-dark "file:///home/$USER/.config/polybar/wallpapers/purple-eva01.jpg"
+
 ~/.config/polybar/launch.sh
 
 echo "Rice instalado com sucesso!"
