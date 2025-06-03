@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install polybar rofi -y
+sudo apt install polybar rofi dbus-x11 -y
 
 if [ -f "$HOME/.config/polybar" ]; then
     rm -f "$HOME/.config/polybar"
