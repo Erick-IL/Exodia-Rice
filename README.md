@@ -30,7 +30,7 @@ Um rice minimalista e funcional para ambientes GNOME, inspirado no visual do Exo
 
 ```bash
 
-git clone https://github.com/Erick-IL/Exodia_rice.git
+git clone https://github.com/Erick-IL/Exodia-rice.git
 cd Exodia-rice
 
 ./install.sh
